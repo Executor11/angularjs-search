@@ -1,0 +1,12 @@
+<div class="search-box"
+    ><input
+        type="text"
+        ng-model="search.caption"
+        placeholder="Enter Search Item"
+        class="search-input"
+    />
+    <div class="search-items" ng-repeat="item in items | filter : search">
+        <img src="{{item.link}}" alt="image" class="items-image" />
+        <p class="image-caption">{{item.caption}}</p>
+    </div></div
+>
